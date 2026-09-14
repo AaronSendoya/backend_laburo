@@ -1,0 +1,17 @@
+{
+  "name": "@app-laburo/config-eslint",
+  "private": true,
+  "version": "0.0.0",
+  "main": "base.js",
+  "files": [
+    "base.js"
+  ],
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.10.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.12.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.69.0"
+  }
+}
