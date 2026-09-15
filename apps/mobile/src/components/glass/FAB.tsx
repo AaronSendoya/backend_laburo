@@ -1,3 +1,4 @@
+import type { StyleProp, ViewStyle } from 'react-native';
 import { Pressable, StyleSheet } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import { GlassView } from 'expo-glass-effect';
@@ -9,16 +10,12 @@ import { useEffectiveColorScheme } from '@/hooks/use-effective-color-scheme';
 interface FABProps {
   onPress: () => void;
   icon?: keyof typeof Ionicons.glyphMap;
+  style?: StyleProp<ViewStyle>;
 }
 
 const SIZE = 58;
 
-/**
- * Botón flotante para la acción principal de una pantalla — reemplaza un CTA
- * de ancho completo. Flota sobre el contenido (position: absolute), así que
- * el padre necesita `flex: 1` y no debe ser el propio ScrollView.
- */
-export function FAB({ onPress, icon = 'add' }: FABProps) {
+export function FAB({ onPress, icon = 'add', style }: FABProps) {
   const theme = useTheme();
   const scheme = useEffectiveColorScheme();
   const shadow = Shadows[scheme];
@@ -29,7 +26,7 @@ export function FAB({ onPress, icon = 'add' }: FABProps) {
         void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
         onPress();
       }}
-      style={({ pressed }) => [styles.wrap, shadow, { opacity: pressed ? 0.85 : 1, transform: [{ scale: pressed ? 0.96 : 1 }] }]}>
+      style={({ pressed }) => [styles.wrap, shadow, style, { opacity: pressed ? 0.85 : 1, transform: [{ scale: pressed ? 0.96 : 1 }] }]}>
       <GlassView isInteractive glassEffectStyle="regular" tintColor={theme.accent} style={styles.inner}>
         <Ionicons name={icon} size={26} color="#ffffff" />
       </GlassView>
