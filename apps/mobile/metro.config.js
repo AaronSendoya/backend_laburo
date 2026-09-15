@@ -8,6 +8,7 @@ const config = getDefaultConfig(projectRoot);
 
 // drizzle-kit para Expo emite migraciones como .sql importados vía babel-plugin-inline-import.
 config.resolver.sourceExts.push('sql');
+config.resolver.assetExts.push('wasm');
 
 // @app-laburo/shared vive fuera de apps/mobile (dependencia "file:" hacia
 // packages/shared, no es parte del workspace de pnpm) — Metro necesita saber

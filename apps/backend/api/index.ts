@@ -38,3 +38,10 @@ export default async function handler(req: IncomingMessage, res: ServerResponse)
   const expressInstance = await getApp();
   expressInstance(req, res);
 }
+
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
+
