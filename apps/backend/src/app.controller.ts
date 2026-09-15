@@ -1,8 +1,10 @@
 import { Controller, Get, Header } from '@nestjs/common';
+import { Public } from './auth/public.decorator';
 
 @Controller()
 export class AppController {
   @Get()
+  @Public()
   @Header('Content-Type', 'text/html')
   getFallback(): string {
     return `
