@@ -37,7 +37,7 @@ function buildCsv(entries: LocalTimeEntry[]): string {
 /** Genera el CSV 100% on-device y abre la hoja de compartir nativa — mismo camino offline que el PDF. */
 export async function buildAndShareReportCsv(entries: LocalTimeEntry[]): Promise<void> {
   const csv = buildCsv(entries);
-  const file = new File(Paths.cache, `pista8-reporte-${Date.now()}.csv`);
+  const file = new File(Paths.cache, `laburo-reporte-${Date.now()}.csv`);
   file.create({ overwrite: true });
   file.write(csv);
 

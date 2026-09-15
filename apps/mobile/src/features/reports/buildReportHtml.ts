@@ -47,7 +47,7 @@ function buildReportHtml({ entries, summary, from, to }: BuildReportPdfInput): s
         </style>
       </head>
       <body>
-        <h1>Reporte de horas — Pista8</h1>
+        <h1>Reporte de horas — Laburo</h1>
         <div class="subtitle">${formatLocalDateLabel(from, 'dd/MM/yyyy')} – ${formatLocalDateLabel(to, 'dd/MM/yyyy')}</div>
         <div class="stats">
           <div class="stat"><div class="value">${formatHours(summary.totalHours)}</div><div class="label">TOTAL</div></div>

@@ -1,4 +1,4 @@
-# app_laburo — Pista8 Time Tracker
+# app_laburo — Laburo Time Tracker
 
 App personal para registrar horas de pasantía: entrada/salida, calendario, reportes con gráficas y exportación PDF/CSV, y respaldo opcional en la nube con cuenta propia. Local-first: SQLite en el dispositivo es siempre la fuente de verdad — la app funciona 100% sin conexión y sin cuenta.
 

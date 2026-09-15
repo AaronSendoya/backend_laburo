@@ -190,7 +190,7 @@ export default function SettingsScreen() {
       if (!granted) {
         Alert.alert(
           'Permiso de notificaciones',
-          'Para avisarte necesito permiso de notificaciones. Podés habilitarlo desde Ajustes del sistema › Pista8 › Notificaciones.',
+          'Para avisarte necesito permiso de notificaciones. Podés habilitarlo desde Ajustes del sistema › Laburo › Notificaciones.',
         );
         return;
       }
@@ -214,7 +214,7 @@ export default function SettingsScreen() {
                 setCompanyNameError(null);
               }}
               error={companyNameError}
-              placeholder="Ej: Pista8"
+              placeholder="Ej: Laburo"
               maxLength={COMPANY_NAME_MAX_LENGTH}
               autoCorrect={false}
               autoFocus={Boolean(savedCompanyName)}

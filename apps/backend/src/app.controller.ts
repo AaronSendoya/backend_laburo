@@ -13,7 +13,7 @@ export class AppController {
         <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>API Pista8</title>
+          <title>API Laburo</title>
           <style>
             body { 
               font-family: system-ui, -apple-system, sans-serif; 
@@ -43,8 +43,8 @@ export class AppController {
           </style>
         </head>
         <body>
-          <h1>Pista8 API</h1>
-          <p>Esta es la interfaz de programación de aplicaciones (API) para Pista8.<br/>El servidor está en línea y procesando solicitudes.</p>
+          <h1>Laburo API</h1>
+          <p>Esta es la interfaz de programación de aplicaciones (API) para Laburo.<br/>El servidor está en línea y procesando solicitudes.</p>
           <div class="badge">Sistemas Operativos</div>
         </body>
       </html>

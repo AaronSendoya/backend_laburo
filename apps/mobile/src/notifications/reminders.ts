@@ -37,7 +37,7 @@ export async function scheduleOpenEntryReminder(
     identifier: entryId,
     content: {
       title: 'Entrada sin cerrar',
-      body: 'Todavía no marcaste tu salida — abrí Pista8 si ya terminaste de trabajar.',
+      body: 'Todavía no marcaste tu salida — abrí Laburo si ya terminaste de trabajar.',
       data: { entryId },
     },
     trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: triggerDate },
