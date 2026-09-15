@@ -347,7 +347,7 @@ export default function DashboardScreen() {
         </GlassCard>
       </ScrollView>
 
-      <FAB onPress={() => router.push('/entry/new')} style={{ bottom: insets.bottom + 90 }} />
+      <FAB onPress={() => router.push('/entry/new')} style={{ bottom: insets.bottom + 60 }} />
     </View>
   );
 }

@@ -9,6 +9,7 @@ import { AuthModule } from './auth/auth.module';
 import { HealthModule } from './health/health.module';
 import { TimeEntriesModule } from './time-entries/time-entries.module';
 import { SyncModule } from './sync/sync.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { SyncModule } from './sync/sync.module';
     TimeEntriesModule,
     SyncModule,
   ],
+  controllers: [AppController],
   providers: [
     { provide: APP_PIPE, useClass: ZodValidationPipe },
     { provide: APP_GUARD, useClass: ThrottlerGuard },
